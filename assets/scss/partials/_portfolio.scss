@@ -1,0 +1,339 @@
+section.banner--restaurant {
+    position: relative;
+    background: #f6f6f6;
+    .banner__header {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 30rem;
+    }
+    .banner__mockup {
+        position: absolute;
+        width: 65%;
+        z-index: 1;
+        bottom: -20rem;
+    }
+}
+
+section.about--portfolio {
+    height: 56rem;
+    background-color: #f6f6f6;
+    .about__content {
+        width: 65%;
+        height: auto;
+        margin-top: 18rem;
+        text-align: center;
+    }
+}
+
+section.info {
+    @include flex(center);
+    width: 100%;
+    height: 90rem;
+    .info__content {
+        @include flex(center);
+        width: 77%;
+        height: 70rem;
+        .info__content__website {
+            width: 58%;
+            height: 70rem;
+            overflow-y: scroll;
+            -webkit-box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgba(0, 0, 0, 0.13);
+            box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgba(0, 0, 0, 0.13);
+            .info__content__website__image {
+                width: 100%;
+            }
+        }
+        .info__content__text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 70rem;
+            margin-left: 10%;
+            font-size: 1.6rem;
+            line-height: 180%;
+            h2{
+                font-size: 3rem;
+                &:nth-child(2) {
+                    margin-top: 0;
+                }
+                &:nth-child(3) {
+                    margin-top: 4.5rem;
+                }
+            }
+        }
+    }
+}
+
+.mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .mobile__content {
+        @include flex(space-between);
+        width: 77%;
+        margin: 4rem 0 12rem 0;
+        .mobile__content__mockup{
+            width: 28%;
+        }
+    }
+}
+
+@media (min-width: 1441px) {
+    section.banner--restaurant {
+        .banner__mockup {
+            width: 56%;
+        }
+    }
+    
+    section.about--portfolio {
+        .about__content {
+            width: 56%;
+        }
+    }
+
+    section.info {
+        height: 110rem;
+        .info__content {
+            width: 64%;
+            height: 90rem;
+            .info__content__website {
+                height: 90rem;
+            }
+            .info__content__text {
+                height: 90rem;
+                h2{
+                    &:nth-child(3) {
+                        margin-top: 6rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .mobile {
+        .mobile__content {
+            width: 64%;
+            margin: 6rem 0 14rem 0;
+            .mobile__content__mockup{
+                width: 26%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1921px) {
+    section.banner--restaurant {
+        .banner__mockup {
+            width: 45%;
+        }
+        .banner__header {
+            margin-bottom: 20vw;
+        }
+    }
+    
+    section.about--portfolio {
+        .about__content {
+            width: 45%;
+        }
+    }
+
+    section.info {
+        .info__content {
+            width: 50%;
+        }
+    }
+    
+    .mobile {
+        .mobile__content {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    section.banner--restaurant {
+        .banner__header {
+            margin-bottom: 18rem;
+        }
+        .banner__mockup {
+            width: 66rem;
+            bottom: -17rem;
+        }
+    }
+
+    section.about--portfolio {
+        height: 50rem;
+        .about__content {
+            width: 66rem;
+            margin-top: 14rem;
+        }
+    }
+}
+
+@media (max-width: 830px) {
+    section.info {
+        .info__content {
+            .info__content__text {
+                line-height: 170%;
+                h2{
+                    margin-bottom: 1rem;
+                    line-height: 130%;
+                    &:nth-child(3) {
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media (max-width: 768px) {
+    section.banner--restaurant {
+        .banner__header {
+            margin-bottom: 40vw;
+        }
+        .banner__mockup {
+            width: 80%;
+            bottom: -2vw;
+        }
+    }
+    
+    section.about--portfolio {
+        height: 65vw;
+        .about__content {
+            width: 80%;
+            margin-top: 0vw;
+        }
+    }
+
+    section.info {
+        width: 100%;
+        height: 220vw;
+        .info__content {
+            flex-direction: column;
+            width: 80%;
+            height: 220vw;
+            .info__content__website {
+                width: 100%;
+                height: 100vw;
+                margin-top: 20vw;
+                box-shadow: none;
+            }
+            .info__content__text {
+                width: 100%;
+                height: 110vw;
+                margin-left: 0;
+                font-size: 3vw;
+                text-align: center;
+                h2{
+                    font-size: 5.2vw;
+                    margin-bottom: 3vw;
+                    &:nth-child(3) {
+                        margin-top: 7vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile {
+        .mobile__content {
+            flex-direction: column;
+            width: 70%;
+            margin: 0 0 10vw 0;
+            .mobile__content__mockup{
+                width: 100%;
+                margin: 6vw 0;
+            }
+        }
+    }
+}
+
+@media (max-height: 415px) {
+    section.banner--restaurant {
+        .banner__header {
+            margin-bottom: 15vw;
+        }
+        .banner__mockup {
+            position: absolute;
+            bottom: -27vw;
+        }
+    }
+    
+    section.about--portfolio {
+        height: 56rem;
+        background-color: #f6f6f6;
+        .about__content {
+            width: 65%;
+            height: auto;
+            margin-top: 18rem;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    section.banner--restaurant {
+        .banner__header {
+            margin-bottom: 30vw;
+        }
+        .banner__mockup {
+            width: 86;
+            bottom: 25vw;
+        }
+    }
+    
+    section.about--portfolio {
+        align-items: baseline;
+        height: 132vw;
+        .about__content {
+            position: relative;
+            width: 65%;
+            bottom: 8vw;
+            margin-top: 0;
+            p {
+                font-size: 4.8vw;
+                
+            }
+        }
+    }
+
+    section.info {
+        height: 380vw;
+        .info__content {
+            justify-content: flex-start;
+            width: 80%;
+            height: 380vw;
+            .info__content__website {
+                height: 150vw;
+                margin-top: 20vw;
+            }
+            .info__content__text {
+                width: 100%;
+                height: 220vw;
+                margin-left: 0;
+                font-size: 4.8vw;
+                text-align: center;
+                margin-top: 10vw;
+                h2{
+                    font-size: 8vw;
+                    margin-bottom: 6vw;
+                    &:nth-child(3) {
+                        margin-top: 12vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile {
+        .mobile__content {
+            width: 78%;
+            margin: 2vw 0 12vw 0;
+            .mobile__content__mockup{
+                margin: 6vw 0;
+            }
+        }
+    }
+}

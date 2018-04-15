@@ -1,0 +1,11 @@
+@supports (-ms-ime-align:auto) {
+	html {
+		overflow-x: hidden;
+	}
+	.navigation__menu {
+  		margin-top: -90vh;
+	}
+ 	.show--navigation {
+		margin-top: 9rem;
+	}
+}

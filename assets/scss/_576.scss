@@ -1,0 +1,322 @@
+@media (max-width: 576px) {
+
+	.standard-button {
+		padding: 3.6vw 5.2vw;
+		font-size: 3.6vw;
+	}
+
+	nav.navigation {
+		width: 100vw;
+		height: 7rem;
+		.navigation__elements {
+			width: 100vw;
+			height: 7rem;
+			padding: 0 6%;
+			a.navigation__logo {
+				height: 7rem;
+				line-height: 7rem;
+			}
+		}
+		.navigation__menu {
+			height: 48rem;
+			margin-top: -48rem;
+			ul.navigation__menu__elements {
+				li.navigation__menu__elements__once {
+					height: 5.7rem;
+					font-size: 1.8rem;
+				}
+			}
+		}
+		.navigation__menu--show {
+			margin-top: 7rem;	
+		}
+	}
+
+	section.banner {
+		background-size: 170%;
+		background-position: 50% 10%;
+		.banner__header {
+			width: 70vw;
+			padding-bottom: 10vh;
+			h1.banner__header__title {
+				font-size: 3rem;
+				line-height: 4rem;
+				span {
+					display: inline;
+				}
+			}
+		}
+	}
+
+	section.about {
+		height: 180vw;
+		.about__content {
+			flex-direction: column;
+			height: auto;
+			.about__content__img {
+				width: 100%;
+				height: 60vw;
+			}
+			.about__content__text {
+				width: 100%;
+				height: auto;
+				padding: 0;
+				margin: 0;
+				text-align: center;
+				h2.about__content__text__header {
+					font-size: 7.8vw;
+					margin: 9vw 0 6vw 0;
+				}
+				p.about__content__text__paragraph {
+					font-size: 4.5vw;
+				}
+				.about__content__text__button {
+					padding: 3.6vw 5.2vw;
+					font-size: 3.6vw;
+					margin-top: 4vw;
+				}
+			}
+		}
+	}
+
+	section.carousel {
+		height: 195vw;
+		h2.carousel__header {
+			width: 80%;
+			padding-top: 12vw;
+			font-size: 7.8vw;
+		}
+		.carousel__projects {
+			height: 150vw;
+			.carousel__projects__once {
+				height: 150vw;
+				margin: 12vw auto;
+				.carousel__projects__once__link__overlay {
+					height: 140vw;
+					.carousel__projects__once__link__overlay__title {
+						margin-bottom: 4vw;
+						.carousel__projects__once__link__overlay__title__name {
+							margin: 0 auto 4vw auto;
+							font-size: 7vw;
+						}
+						.carousel__projects__once__link__overlay__title__year {
+							font-size: 5vw;
+						}
+					}
+					.carousel__projects__once__link__overlay__more {
+						bottom: 2.5rem;
+						font-size: 3.5vw;
+					}
+				}
+			}
+		}
+		.carousel__dots {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 10vw;
+			span.carousel__dots__once {
+				font-size: 1rem;
+				margin: 0 .3rem;
+				color: #666;
+				opacity: .3;
+				transition: opacity 200ms;
+			}
+			span.carousel__dots__once:nth-child(1) {
+				opacity: 1;
+			}
+		}
+	}
+
+	section.doing {
+		.doing__content {
+			width: 95vw;
+			h2.doing__content__header {
+				width: 80vw;
+				margin: 12vw auto;
+				font-size: 7.8vw;
+			}
+			.doing__content__row {
+				height: 145vw;
+				.doing__content__row__image {
+					width: 100%;
+					height: 80vw;
+					margin: 0;
+				}
+				&:nth-child(3) .doing__content__row__image {
+                    margin-left: 0;
+                }
+				.doing__content__row__text {
+					position: static;
+					width: 80vw;
+					height: 82vw;
+					margin: -35vw auto 0 auto;
+					padding: 6vw;
+					text-align: center;
+					h3 {
+						font-size: 7vw;
+						margin-top: .5rem;
+						margin-bottom: 4vw;
+					}
+					p {
+						font-size: 4vw;
+					}
+				}
+			}
+		}
+	}
+
+	section.opinions {
+		height: 215vw;
+		background-position: 80% 50%;
+		background-size: cover;
+		.opinions__container {
+			h2.opinions__container__header {
+				width: 80%;
+				margin: 0 auto;
+				padding: 12vw 0;
+				left: 0;
+				font-size: 7.8vw;
+			}
+			figure.opinions__container__row {
+				height: 148vw;
+				width: 86vw;
+				margin: 0 auto;
+				left: 0;
+				figcaption.opinions__container__row__author {
+					margin: 0 auto 1.8rem auto;
+					h3 {
+						font-size: 7vw;
+					}
+				}
+				p {
+					font-size: 4.5vw;			
+					&.opinions__content__row__project-link {
+						margin-top: 7vw;
+						font-size: 3.5vw;
+					}		
+				}
+			}
+		}
+	}
+
+	section.blog {
+		h2.blog__header {
+			margin: 6rem auto;
+			font-size: 7.8vw;
+		}
+		.blog__content {
+			display: block;
+			width: 86vw;
+			height: 190vw;
+			margin: 0 auto;
+			.blog__content__image {
+				position: relative;
+				width: 100%;
+				height: 70vw;
+				left: 0;
+			}
+			.blog__content__text {
+				position: relative;
+				width: 100%;
+				height: 100vw;
+				right: 0;
+				top: 6vw;
+				padding: 0;
+				background-color: #fff;
+				.fade-animation--delayed {
+					width: 100%;
+					h3 {
+						margin: 2rem 0 2rem 0;
+						font-size: 7vw;
+						text-align: center;
+					}
+					p {
+						font-size: 4.3vw;
+						text-align: center;
+					}
+					.blog__content__text--flex {
+						position: static;
+						justify-content: center;
+						a {
+							margin-top: .5rem;
+						}
+						.blog__content__text__comments {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	section.contact {
+		height: 320vw;
+		h2.contact__header {
+			padding: 12vw 0;
+			font-size: 7.8vw;
+		}
+		.contact__content {
+			.contact__content__info {
+				margin: 15vw auto 0 auto;
+				padding: 10vw 0;
+				h3.contact__content__info__header {
+					margin-top: 6vw;
+					font-size: 7vw;
+				}
+				a.contact__content__info__header__link {
+					font-size: 4.5vw;
+				}
+				.contact__content__info__social {
+					margin: 12vw auto 6vw auto;
+					a {
+						font-size: 4.2vw;
+					}
+				}
+			}
+			form.contact__content__form {
+				width: 86%;
+				height: auto;
+				margin: 0 auto;
+				padding: 9vw;
+				h3.contact__content__form__header {
+					padding: 4vw 0;
+					font-size: 7vw;
+					font-family: 'Roboto', sans-serif;
+					font-weight: 300;
+					text-align: center;
+				}
+				.contact__content__form__input {
+					margin: 3.7vw;
+					input.contact__content__form__input__field {
+						height: 14vw;
+					}
+					textarea.contact__content__form__input__field {
+						height: 22vw;
+					}					
+				}
+				.contact__content__form__input__button {
+					margin-bottom: 5vw;
+					.contact__content__form__input__button__input {
+						width: 50vw;
+					}
+				}
+			}
+		}
+	}
+
+	footer.main-footer {
+		height: 9.5rem;
+		.main-footer__content {
+			height: 100%;
+			flex-direction: column;
+			justify-content: center;
+			span {
+				font-size: 1.35rem;
+				line-height: 190%;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,26 @@
+@mixin flex($justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin standardP() {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 160%; 
+    @media (max-width: 992px) {
+        font-size: 1.8vw;
+    }
+    @media (max-width: 767px) {
+        font-size: 1.7rem;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+}
+
+@mixin standardH2 {
+    padding: 7rem 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-align: center;
+}

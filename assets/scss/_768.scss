@@ -1,0 +1,184 @@
+@media (max-width: 768px) {
+
+    li.navigation__menu__elements__once {
+        height: 6rem;
+        font-size: 2rem;
+    }
+    
+    section.banner {
+        background-position: top;
+    }
+
+    section.about {
+        height: 80vw;
+        .about__content {
+            height: 54vw;
+            .about__content__img {
+                height: 100%;
+            }
+            .about__content__text {
+                height: 100%;
+                .about__content__text__header {
+                    font-size: 4.8vw;
+                    margin-bottom: 2.5vw;
+                }
+                .about__content__text__paragraph {
+                    font-size: 2.3vw;
+                }
+                .about__content__text__button {
+                    margin-top: 2vw;
+                    padding: 1.9vw 3.8vw;
+                    font-size: 1.8vw;
+                }
+            }
+        }
+    }
+
+    section.carousel {
+        height: 88vw;
+        h2.carousel__header {
+            padding-top: 7vw;
+            font-size: 4.8vw;
+        }
+        .carousel__projects {
+            width: 90vw;
+            height: auto;
+            .carousel__projects__once {
+                width: 82vw;
+                height: 58vw;
+                margin: 7vw auto .3vw auto;
+                .carousel__projects__once__link__overlay {
+                    height: 58vw;					
+                    .carousel__projects__once__link__overlay__title {
+                        .carousel__projects__once__link__overlay__title__name {
+                            margin: 0 auto 1.5vw auto;
+                            font-size: 3.6vw;
+                        }
+                        .carousel__projects__once__link__overlay__title__year {
+                            font-size: 2.7vw;
+                        }
+                    }
+                    .carousel__projects__once__link__overlay__more {
+                        bottom: 1vw;
+                        font-size: 1.9vw;
+                    }
+                }
+            }
+        }
+    }
+    section.doing {
+        .doing__content {
+            .doing__content__row {
+                height: 60rem;
+                .doing__content__row__image {
+                    height: 40rem;
+                }
+                .doing__content__row__text {
+                    bottom: 10rem;
+                }
+            }
+        }
+    }
+
+    section.opinions {
+        height: 71rem;
+        .opinions__container {
+            width: 100vw;
+            h2.opinions__container__header {
+                width: 55rem;
+            }
+            .opinions__container__row {
+                width: 55rem;
+                height: 45rem;
+            }
+        }
+    }
+
+    section.blog {
+		h2.blog__header {
+            padding: 7rem 0;
+            font-size: 4.8vw;
+        }
+        .blog__content {
+            width: 100%;
+            .blog__content__image {
+                width: 100%;
+                .blog__content__date {
+                    display: none;
+                }
+            }
+            .blog__content__text {
+                left: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+    
+    section.contact {
+		height: 320vw;
+		h2.contact__header {
+			width: 80%;
+			margin: 0 auto;
+			padding: 6rem 0;
+			font-size: 4.8vw;
+		}
+		.contact__content {
+			display: flex;
+			flex-direction: column-reverse;
+			width: 100vw;
+			.contact__content__info {
+				width: 86%;
+				height: auto;
+				margin: 15vw auto 0 auto;
+				padding: 5vw 0;
+				text-align: center;
+				h3.contact__content__info__header {
+					margin-top: 4vw;
+					font-family: 'Roboto', sans-serif;
+                    font-size: 4vw;
+                    font-weight: 300;
+				}
+				a.contact__content__info__header__link {
+					font-size: 2.4vw;
+				}
+				.contact__content__info__social {
+					position: static;
+					margin: 6vw auto 3vw auto;
+					a {
+						font-size: 2.4vw;
+					}
+				}
+			}
+			form.contact__content__form {
+				position: static;
+				width: 86%;
+				height: auto;
+				margin: 0 auto;
+				padding: 9vw;
+				h3.contact__content__form__header {
+					padding: 4vw 0;
+					font-size: 7vw;
+					font-family: 'Roboto', sans-serif;
+					font-weight: 300;
+					text-align: center;
+				}
+				.contact__content__form__input {
+					margin: 3.7vw;
+					input.contact__content__form__input__field {
+						height: 14vw;
+					}
+					textarea.contact__content__form__input__field {
+						height: 22vw;
+					}					
+				}
+				.contact__content__form__input__button {
+					margin-bottom: 5vw;
+					.contact__content__form__input__button__input {
+						width: 50vw;
+					}
+				}
+			}
+		}
+	}
+
+}

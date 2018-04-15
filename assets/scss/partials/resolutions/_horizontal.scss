@@ -1,0 +1,22 @@
+@media (max-height: 415px) {
+
+    .navigation__elements {
+        height: 6.5rem;
+    }
+    .navigation__menu {
+        height: calc(100vh - 6.5rem);
+        li.navigation__menu__elements__once {
+            height: 10.4vh;
+            font-size: 5.2vh;
+        }
+    }
+    .navigation__menu--show {
+        margin-top: 6.5rem;
+    }
+
+    h1.banner__header__title {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+    }
+}

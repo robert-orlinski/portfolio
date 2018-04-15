@@ -1,0 +1,35 @@
+@media (max-width: 1270px) {
+
+    .doing__content {
+        width: 82%;
+    }
+
+    section.opinions {
+        height: 66rem;
+        .opinions__container {
+            width: 82%;
+        }
+    }
+
+    .blog__content {
+        position: relative;
+        .blog__content__image {
+            position: absolute;
+            width: 52.5rem;
+            left: 0;
+        }
+        .blog__content__text {
+            position: absolute;
+            width: 52.5rem;
+            right: 0;
+        }
+    }
+    
+    form.contact__content__form {
+        width: 54%;
+        input.contact__content__form__input__button__input {
+            width: 18rem;
+        }
+    }
+
+}

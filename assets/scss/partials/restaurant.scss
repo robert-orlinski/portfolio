@@ -1,0 +1,91 @@
+body:after{
+	content: url(../img/mockup-res.png) url(../img/restaurant-website.jpg);
+	display: none;
+}
+
+section.banner--restaurant {
+    position: relative;
+    background: #f6f6f6;
+    .banner__header {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 30rem;
+    }
+    .banner__mockup {
+        position: absolute;
+        width: 65%;
+        z-index: 1;
+        bottom: -20rem;
+    }
+}
+
+section.about--portfolio {
+    height: 56rem;
+    background-color: #f6f6f6;
+    .about__content {
+        width: 65%;
+        height: auto;
+        margin-top: 18rem;
+        text-align: center;
+    }
+}
+
+section.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90rem;
+    .info__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 77%;
+        height: 70rem;
+        .info__content__website {
+            width: 58%;
+            height: 70rem;
+            overflow-y: scroll;
+            -webkit-box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgba(0, 0, 0, 0.13);
+            box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgba(0, 0, 0, 0.13);
+            .info__content__website__image {
+                width: 100%;
+            }
+        }
+        .info__content__text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 70rem;
+            margin-left: 10%;
+            font-size: 1.6rem;
+            line-height: 180%;
+            h2{
+                font-size: 3rem;
+                &:nth-child(2) {
+                    margin-top: 0;
+                }
+                &:nth-child(3) {
+                    margin-top: 4.5rem;
+                }
+            }
+        }
+    }
+}
+
+.mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .mobile__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 77%;
+        margin: 4rem 0 12rem 0;
+        .mobile__content__mockup{
+            width: 28%;
+        }
+    }
+}

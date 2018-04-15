@@ -1,0 +1,29 @@
+@supports (-ms-ime-align:auto) {
+	html {
+		overflow-x: hidden;
+	}
+	.navigation--hide {
+		margin-top: 0;
+    	opacity: 1;
+	}
+	.navigation__menu {
+  		margin-top: -90vh;
+	}
+ 	.navigation__menu--show {
+		margin-top: 8rem;
+	}
+	.banner__arrow--hide {
+		margin-bottom: 0;
+		opacity: 1;
+	}
+	.overlay-animation, .start-overlay-animation {
+		visibility: visible;
+	}
+	.overlay-animation:after, .start-overlay-animation:after {
+		visibility: hidden;
+	}
+	.fade-animation, .fade-animation--delayed, .fade-animation--delayed--bigger-offset {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

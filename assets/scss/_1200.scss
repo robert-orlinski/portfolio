@@ -1,0 +1,27 @@
+@media (max-width: 1279px) {
+    .doing__content__row__image {
+        width: 90%;
+    }
+    .doing__content__row:nth-child(3){
+        .doing__content__row__image {
+            margin-left: 10%;
+        }
+    } 
+
+    figure.opinions__container__row {
+        left: 15%;
+    }
+
+    .blog__content {
+        position: relative;
+        .blog__content__image {
+            position: absolute;
+            width: 52.5rem;
+        }
+        .blog__content__text {
+            position: absolute;
+            width: 52.5rem;
+        }
+    }
+    
+}
