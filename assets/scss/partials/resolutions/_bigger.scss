@@ -8,14 +8,51 @@
     .doing__content {
         width: 64%;
     }
-    .opinions__content {
-        width: 64%;
+    section.opinions {
+        height: 76rem;
+        .opinions__content {
+            width: 64%;
+            .opinions__content__row {
+                width: 50rem;
+                height: 52rem;
+            }
+        }
+    }
+    figcaption.opinions__content__row__author {
+        padding: 4.5rem 0 .5rem 0;
+    }
+    h3.opinions__content__row__author__name {
+        font-size: 3rem;        
+        margin-bottom: .5rem;
+    }
+    p.opinions__content__row__author__company {
+        font-size: 1.8rem;
+    }
+    blockquote.opinions__content__row__text {
+        p {
+          font-size: 1.9rem;
+        }
+    }
+    p.opinions__content__row__project-link {
+        font-size: 1.6rem;
+        margin-top: 2.3rem;
     }
     .blog__content {
         width: 64%;
     }
     .contact__content {
         width: 64%;
+    }
+}
+@media (min-width: 1800px) {
+    section.opinions {
+        height: 73rem;
+        .opinions__content {
+            .opinions__content__row {
+                width: 56rem;
+                height: 48rem;
+            }
+        }
     }
 }
 @media (min-width: 1921px) {
@@ -28,8 +65,10 @@
     .doing__content {
         width: 50%;
     }
-    .opinions__content {
-        width: 50%;
+    section.opinions {
+        .opinions__content {
+            width: 50%;
+        }
     }
     .blog__content {
         width: 50%;
